@@ -32,7 +32,8 @@ function App() {
 
   const handleSubmit = async () => {
     setLoading(true);
-    const prompt = \`
+    const prompt = `
+
 You are a decision-making assistant. The user is trying to decide whether to move forward with a specific decision based on their overall goal, values, resources, constraints, and non-negotiables.
 
 Analyze the decision based on the following:
