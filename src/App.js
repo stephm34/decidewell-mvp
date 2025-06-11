@@ -67,12 +67,12 @@ Checklist to move forward (or make it viable):
 - [3]
 `;
 
-    try {
-      const res = await fetch("/api/claude", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt }),
-      });
+   try {
+  const res = await fetch("https://claude-backend.onrender.com/claude", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ prompt }),
+  });
       const data = await res.json();
       setResult(data.result);
     } catch (err) {
